@@ -1,0 +1,9 @@
+#bg {
+    background-image: url('img/weather_bg.jpg');
+    width: 100%;
+    background-size: cover;
+}
+
+.marginBottom {
+    margin-bottom: 100px;
+}

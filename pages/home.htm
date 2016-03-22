@@ -1,0 +1,19 @@
+<div class="row">
+
+    <div class="col-md-6 col-md-offset-3">
+
+        <h4>Forecast by city</h4>
+    <form ng-submit="submit()">
+        <div class="form-group">
+            <input type="text" placeholder="e.g. New York, NY" class="form-control" ng-model="city" />
+        </div>
+        <div class="alert alert-warning" ng-if=" city.length < 1 ">
+                You have to fill this.
+        </div>
+        <div class="alert alert-danger" ng-if=" city === 'number' ">
+                Do you know any city name which contains numbers?
+            </div>
+        <input type="submit" class="btn btn-primary" value="Get Forecast - {{ city }}"/>
+    </form>
+    </div>
+</div>
